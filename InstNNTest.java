@@ -23,7 +23,7 @@ public class InstNNTest
 		
 		try
 		{
-			if (args.length!)
+			if (!args.length)
 			{
 				System.out.println("Please include the matrix files as arguments [input matrix] [output matrix]");
 			}
