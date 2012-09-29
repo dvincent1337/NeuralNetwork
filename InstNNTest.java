@@ -25,7 +25,7 @@ public class InstNNTest
 		{
 			if (args.length!)
 			{
-				System.out.println("Please include the matrix files as arguments [input matrix] [output matrix]
+				System.out.println("Please include the matrix files as arguments [input matrix] [output matrix]");
 			}
 			Scanner inputScanner = new Scanner(System.in);
 			DoubleMatrix X = NeuralNetwork.getFromTextFile(args[0]);	//Get training input data from a file
