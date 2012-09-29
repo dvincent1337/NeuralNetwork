@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 import org.jblas.DoubleMatrix;
 
+/*
+* Tests the neural network and trains it with a given dataset
+*/
+
 
 public class InstNNTest
 {
