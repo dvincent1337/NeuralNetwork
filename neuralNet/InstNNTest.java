@@ -23,13 +23,13 @@ public class InstNNTest
 		
 		try
 		{
-			if (!args.length)
+			if (args.length <1)
 			{
 				System.out.println("Please include the matrix files as arguments [input matrix] [output matrix]");
 			}
 			Scanner inputScanner = new Scanner(System.in);
-			DoubleMatrix X = NeuralNetwork.getFromTextFile(args[0]);	//Get training input data from a file
-			DoubleMatrix Y = NeuralNetwork.getFromTextFile(args[1]);	//Get training output data from a file
+			DoubleMatrix X = NeuralNetwork.getMatrixFromTextFile(args[0]);	//Get training input data from a file
+			DoubleMatrix Y = NeuralNetwork.getMatrixFromTextFile(args[1]);	//Get training output data from a file
 			
 			int[] topology = {400,30,33,10};	
 			double lambda = 0.905343;

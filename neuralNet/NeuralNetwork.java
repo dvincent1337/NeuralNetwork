@@ -216,7 +216,7 @@ public class NeuralNetwork
 	 * The format of the text file should have each row separated by a newline character
 	 * The format of the text file should have each column separated by a space character (' ').
 	 */
-	public static DoubleMatrix getFromTextFile(String filename) throws NumberFormatException, IOException
+	public static DoubleMatrix getMatrixFromTextFile(String filename) throws NumberFormatException, IOException
 	{
 		DoubleMatrix result =null;
 
@@ -619,7 +619,7 @@ public class NeuralNetwork
 		      { // if line search succeeded
 		    	  f1 = f2;
 		    	  if (verbose)
-		    		  System.out.print("Interation " + i + " | Cost: " + f1 + "\r");
+		    		  System.out.print("Iteration " + i + " | Cost: " + f1 + "\r");
 		    	  // Polack-Ribiere direction: s =
 		    	  // (df2'*df2-df1'*df2)/(df1'*df1)*s - df2;
 		    	  final double numerator = (df2.dot(df2) - df1.dot(df2)) / df1.dot(df1);
