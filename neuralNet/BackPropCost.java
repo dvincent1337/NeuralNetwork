@@ -80,7 +80,7 @@ public class BackPropCost implements CostFunction
 			ThetaReg += MatrixFunctions.pow(currentTheta.get(rows,cols),2).sum();
 		}
 		
-		double J = (J_part.sum() + (lambda/2)*ThetaReg)/m; //Add the non regularization and regularization cost together 
+		double J = (J_part.sum() + (lambda)*ThetaReg)/(2*m); //Add the non regularization and regularization cost together 
 		
 		//----------------|FINISHED FORWARD PROP AND FOUND COST |-------------
 		
