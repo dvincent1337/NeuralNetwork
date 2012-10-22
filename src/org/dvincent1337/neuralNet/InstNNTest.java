@@ -1,9 +1,6 @@
-package neuralNet;
+package org.dvincent1337.neuralNet;
 import java.io.IOException;
 import java.util.Scanner;
-
-
-import neuralNet.NeuralNetwork;
 
 import org.jblas.DoubleMatrix;
 

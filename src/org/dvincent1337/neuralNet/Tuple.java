@@ -1,4 +1,4 @@
-package neuralNet;
+package org.dvincent1337.neuralNet;
 public class Tuple<FIRST ,SECOND>
 {
 	/*

@@ -1,4 +1,4 @@
-package neuralNet;
+package org.dvincent1337.neuralNet;
 /*
  * class BackPropCost
  * Author: David Vincent

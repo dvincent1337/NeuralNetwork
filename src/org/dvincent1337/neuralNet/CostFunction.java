@@ -1,6 +1,4 @@
-package neuralNet;
-
-import neuralNet.Tuple;
+package org.dvincent1337.neuralNet;
 
 import org.jblas.DoubleMatrix;
 

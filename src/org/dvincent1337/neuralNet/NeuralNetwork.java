@@ -1,4 +1,4 @@
-package neuralNet;
+package org.dvincent1337.neuralNet;
 /*
  * 	class NeuralNetwork
  *	Author: David Vincent
@@ -52,7 +52,6 @@ package neuralNet;
  */
 
 
-import CostFunction;
 
 import org.jblas.DoubleMatrix;
 import org.jblas.MatrixFunctions;
