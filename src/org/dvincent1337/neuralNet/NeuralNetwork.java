@@ -324,10 +324,9 @@ public class NeuralNetwork
 	 */
 	public static int [] extractTopologyFromWeights(Vector<DoubleMatrix>inputTheta)
 	{
-		//NOTE: ASSUMES atleast 2 matracies of weights (min of 3 layers)
 		int layers = inputTheta.size() +1;
 		int [] topology = new int [layers];
-		//Rember Theta is an elemnt of real numbers of dimentions (S*(j+1))x(S*(j) + 1);
+		//Remember Theta is an elemnet of real numbers of dimensions (S*(j+1))x(S*(j) + 1);
 		for (int i = 0; i < (layers); i++)
 		{
 			
