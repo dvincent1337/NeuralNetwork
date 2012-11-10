@@ -31,7 +31,7 @@ public class InstNNTest
 			DoubleMatrix X = NeuralNetwork.getMatrixFromTextFile(args[0]);	//Get training input data from a file
 			DoubleMatrix Y = NeuralNetwork.getMatrixFromTextFile(args[1]);	//Get training output data from a file
 			
-			int[] topology = {400,30,33,10};	
+			int[] topology = {400,30,32,10};	
 			double lambda = 0.905343;
 			
 			NeuralNetwork digitReader = new NeuralNetwork(topology,true);	//Create the neural network! randomly generate theta elements
@@ -51,7 +51,6 @@ public class InstNNTest
 			}
 			inputScanner.close();
 
-			
 		} catch (NumberFormatException | IOException e)
 		{
 			e.printStackTrace();

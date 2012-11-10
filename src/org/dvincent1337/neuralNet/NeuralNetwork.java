@@ -320,6 +320,31 @@ public class NeuralNetwork
 	}
 	
 	/**
+	 * Takes a given List of weight matrices, and extracts a neural network topology based on the sizes of the matracies.
+	 */
+	public static int [] extractTopologyFromWeights(Vector<DoubleMatrix>inputTheta)
+	{
+		//NOTE: ASSUMES atleast 2 matracies of weights (min of 3 layers)
+		int layers = inputTheta.size() +1;
+		int [] topology = new int [layers];
+		//Rember Theta is an elemnt of real numbers of dimentions (S*(j+1))x(S*(j) + 1);
+		for (int i = 0; i < (layers); i++)
+		{
+			
+			if (i == (layers-1) )
+			{
+				topology[i] = inputTheta.lastElement().getRows(); 
+			}
+			else
+			{
+				topology[i] = inputTheta.get(i).getColumns() -1;
+			}
+		}
+		return topology;
+		
+	}
+	
+	/**
 	 * Helper function to compute the accuracy of predictions give said predictions and correct output matrix
 	 */
 	public static double computeAccuracy(DoubleMatrix predictions, DoubleMatrix Y)
@@ -382,6 +407,8 @@ public class NeuralNetwork
 		
 		return hypothesis;
 	}
+	
+	
 	/**
 	 * Given a neural network topology, generates connection matrices and initializes each element with random values
 	 */
