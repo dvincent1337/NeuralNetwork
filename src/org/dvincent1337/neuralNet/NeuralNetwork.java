@@ -196,7 +196,7 @@ public class NeuralNetwork
 			}
 			System.out.println();
 		}
-		System.out.println(cols + " " + rows);
+		System.out.println(rows + "x" + cols);
 	}
 
 	/**
