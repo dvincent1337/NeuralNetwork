@@ -1,7 +1,7 @@
 <h1> NeuralNetwork </h1>
 
 This is a Java library for creating artificial neural networks.
-It can:  Create the neural networks,Train the neural networks,Run the neural networks, Debug with testing functions.
+It can: 
 <ul>
 <li> Create Neural Networks </li>
 <li> Train Neural Networks using backpropagationk, optimized with linear algebra </li>
