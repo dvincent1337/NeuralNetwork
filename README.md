@@ -13,3 +13,4 @@ The digitInput.txt is a matrix with 5000 20px by 20px images. The digitOutput.tx
 
 Note: this library requires the jblas linear algebra library. (jblas.org)
 
+Note: this library has only been tested on Linux (Ubuntu 12.04 x64)
