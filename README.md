@@ -4,7 +4,7 @@ This is a Java library for creating artificial neural networks.
 It can: 
 <ul>
 <li> Create Neural Networks </li>
-<li> Train Neural Networks using backpropagationk, optimized with linear algebra </li>
+<li> Train Neural Networks using backpropagation, optimized with linear algebra </li>
 <li> Run Neural Networks </li>
 <li> Debug with testing functions </li>
 </ul>
