@@ -208,7 +208,7 @@ public class NeuralNetwork
 		while (iter.hasNext())
 		{
 			DoubleMatrix m = iter.next();
-			System.out.print(m.getRows() + ","+m.getColumns());
+			System.out.println(m.getRows() + ","+m.getColumns());
 		}
 	}
 	
