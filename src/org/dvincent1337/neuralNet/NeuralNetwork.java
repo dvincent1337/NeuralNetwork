@@ -233,7 +233,15 @@ public class NeuralNetwork
 		{
 			while(true)
 			{
+				//seperate by space
 				int index =line.indexOf(' ');
+				//seperate by comma
+				if (index < 0)
+				{
+					index = line.indexOf(',');
+				}
+				
+				
 				if (index>=0)
 				{
 					example.add(new Double(Double.parseDouble(line.substring(0,index))));
