@@ -59,13 +59,19 @@ import org.jblas.MatrixFunctions;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.Iterator;
 import java.util.Vector;
 
 
-public class NeuralNetwork
+public class NeuralNetwork implements Serializable
 {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	private int [] itsTopology; 			//Neural network topology. each element inidcates neuron size on its layer.
 	private Vector<DoubleMatrix> itsTheta;	//Weight matrices between each layer.
 
